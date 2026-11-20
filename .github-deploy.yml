@@ -1,0 +1,13 @@
+# GitHub Deploy Configuration
+# Target: Cloud Native / Container Platform
+
+platform: docker-compose
+service_name: medinexa-ai
+environments:
+  staging:
+    url: https://staging.medinexa.ai
+    auto_deploy: false
+  production:
+    url: https://app.medinexa.ai
+    auto_deploy: false
+    requires_approval: true
